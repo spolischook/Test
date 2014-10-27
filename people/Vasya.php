@@ -5,7 +5,7 @@ namespace geekhub\people;
 class Vasya extends People
 {
 
-    public function __construct( Vasya $name)
+    public function __construct(Vasya $name)
     {
         parent::__construct($name);
     }
