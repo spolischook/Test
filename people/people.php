@@ -7,7 +7,7 @@ interface СanSay {
     public function say();
 }
 
-abstract class people implements CanSay {
+abstract class People implements CanSay {
     private $name;
 
     public function  __construct($name) {
