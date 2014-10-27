@@ -1,9 +1,9 @@
 <?php
 
 
-namespace people;
+namespace geekhub\people;
 
-interface СanSay {
+interface CanSay {
     public function say();
 }
 
