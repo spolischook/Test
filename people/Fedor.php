@@ -4,12 +4,15 @@
 namespace geekhub\people;
 
 
-class Fedor extends People {
+class Fedor extends People
+{
 
-    public function __construct($name) {
+    public function __construct($name)
+    {
         parent::__construct($name);
     }
-    public function say() {
+    public function say()
+    {
         echo "stop talk about this";
     }
 } 

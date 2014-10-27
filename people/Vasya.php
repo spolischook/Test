@@ -4,12 +4,15 @@
 namespace geekhub\people;
 
 
-class Vasya extends People {
+class Vasya extends People
+{
 
-    public function __construct($name) {
+    public function __construct($name)
+    {
         parent::__construct($name);
     }
-    public function say() {
+    public function say()
+    {
         echo "Hello everybody";
     }
 } 
