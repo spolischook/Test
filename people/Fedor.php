@@ -4,7 +4,7 @@
 namespace geekhub\people;
 
 
-class Fedor extends people {
+class Fedor extends People {
 
     public function __construct($name) {
         parent::__construct($name);
