@@ -1,4 +1,5 @@
 <?php
+
 require_once 'vendor/autoload.php';
 
 use Symfony\Component\HttpFoundation\Request;
@@ -8,8 +9,13 @@ use Phroute\RouteCollector;
 
 $request = Request::createFromGlobals();
 
-$articleController = new ArticleController();
-$indexController = new IndexController();
+$loader = new Twig_Loader_Filesystem(__DIR__ . '/app/views');
+
+$twig = new Twig_Environment($loader);
+
+$articleController = new ArticleController($twig);
+
+$indexController = new IndexController($twig);
 
 $router = new RouteCollector();
 $router->get('/', [$indexController,'indexAction']);
