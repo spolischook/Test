@@ -1,9 +1,8 @@
 <?php
  
-namespace Killsoft;
+namespace Killsoft\Service;
  
 class Sum {
- 
     /**
      * Сумма двух чисел
      */
@@ -11,5 +10,4 @@ class Sum {
     {
         return $a + $b;
     }
- 
 }
